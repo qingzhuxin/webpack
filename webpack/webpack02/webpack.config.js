@@ -3,10 +3,12 @@ module.exports = {
     context: path.join(__dirname, "./src"),
     entry: './index.js',
     output: {
-        filename: "./index.js",
+        path: path.join(__dirname, "dist/js"),
+        filename: "test.js",
     },
     mode: "development",
     devServer: {
-        publicPath: '/dist'
+        publicPath: '/dist',
+        port: 2020
     },
 }
